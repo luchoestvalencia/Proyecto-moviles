@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_6"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@drawable/noticia"
+            android:title="@string/noticias" />
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@drawable/directorio"
+            android:title="@string/directorio" />
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@drawable/sugerencia"
+            android:title="@string/sugerencias" />
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:icon="@drawable/ir_web"
+            android:title="@string/sitio_web" />
+        <item
+            android:id="@+id/menu_seccion_5"
+            android:icon="@drawable/idioma"
+            android:title="@string/version_ingles" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ultimas_noticias">Ultimas noticias</string>
+
+    <string name="home">Inicio</string>
+    <string name="noticias">Noticias</string>
+    <string name="directorio">Directorio</string>
+    <string name="sugerencias">Sugerencias</string>
+    <string name="sitio_web">Ir al sitio web</string>
+    <string name="version_ingles">Versión en Ingles</string>
+
+    <string name="mision">Misión</string>
+    <string name="vision">Visión</string>
+
+    <string name="nombre">Nombre :</string>
+    <string name="email">Correo :</string>
+    <string name="sugerencia">Sugerencia :</string>
+    <string name="enviar">Enviar</string>
+
+    <string name="no_coneccion">No tiene conexión a Internet</string>
+
+</resources>

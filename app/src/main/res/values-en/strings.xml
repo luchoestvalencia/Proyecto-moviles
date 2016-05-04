@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ultimas_noticias">Breaking news</string>
+
+    <string name="home">Home</string>
+    <string name="noticias">News</string>
+    <string name="directorio">Directory</string>
+    <string name="sugerencias">Suggestions</string>
+    <string name="sitio_web">Go to the website</string>
+    <string name="version_ingles">Spanish version</string>
+
+    <string name="mision">Mission</string>
+    <string name="vision">Vision</string>
+
+    <string name="nombre">Name :</string>
+    <string name="email">Email :</string>
+    <string name="sugerencia">Suggestion :</string>
+    <string name="enviar">Submit</string>
+
+    <string name="no_coneccion">It does not have Internet access</string>
+</resources>

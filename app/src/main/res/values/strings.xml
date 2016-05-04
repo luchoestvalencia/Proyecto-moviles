@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Campus UQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ultimas_noticias">Ultimas noticias</string>
+    <string name="titulo">Titulo de la noticia</string>
+    <string name="noticia">En el día de la tierra el programa institucional de ingeniería,
+        Máquina de Ingenio, profundiza con expertos de diferentes campos del conocimiento
+        adscritos a esta facultad de Armenia,
+        entre otros temas.</string>
+
+
+    <string name="home">Inicio</string>
+    <string name="noticias">Noticias</string>
+    <string name="directorio">Directorio</string>
+    <string name="sugerencias">Sugerencias</string>
+    <string name="sitio_web">Ir al sitio web</string>
+    <string name="version_ingles">Versión en Ingles</string>
+
+    <string name="menudirectori">Rectoria</string>
+    <string name="contacto1">Secretaría general</string>
+    <string name="contacto1_2">Telefono: 7458936</string>
+    <string name="contacto2">Planeación y desarrollo</string>
+    <string name="contacto3">Control interno</string>
+    <string name="contacto4">Asuntos disciplinarios</string>
+
+    <string name="mision">Misión</string>
+    <string name="vision">Visión</string>
+
+    <string name="nombre">Nombre :</string>
+    <string name="email">Email :</string>
+    <string name="sugerencia">Sugerencia :</string>
+    <string name="enviar">Enviar</string>
+
+    <string name="no_coneccion">No tiene conexión a Internet</string>
+
+
+    <string name="descripcion_imagen_detalle">Describibcion imagen</string>
+    <string name="texto_detalle_de_noticia">En el día de la tierra el programa institucional de ingeniería,
+        Máquina de Ingenio, profundiza con expertos de diferentes campos del conocimiento adscritos a
+        esta facultad, sobre los aspectos geocientíficos de la actividad sísmica reciente en Japón y
+        Ecuador y su relación con las amenazas que subyacen al cinturón de fuego del pacífico,
+        el diseño de estructuras sismoresistentes, el comportamiento tectónico en Colombia y el
+        problema de la no actualización de la microzonificación sísmica de Armenia, entre otros temas.</string>
+
+    <string name="misionText">La Universidad del Quindío contribuye a la transformación
+        de la sociedad,  mediante la formación integral desde el ser, el saber y el hacer,
+        de líderes reflexivos y gestores del cambio; con estándares de calidad, a través de
+        una oferta de formación en diferentes metodologías, que responda a una sociedad basada
+        en el conocimiento; una investigación pertinente que aporte a la solución de las
+        problemáticas del desarrollo e integrada  con la extensión y proyección social;
+        educando en tiempos del  posconflicto y de la consolidación de la paz, apoyada en
+        una gestión creativa y con estándares de calidad.</string>
+    <string name="visionText">En el año 2025, la Universidad del Quindío estará consolidada como
+        una institución pertinente - creativa – integradora, acreditada de alta calidad, con
+        reconocimiento nacional e internacional en sus procesos de formación a través de diferentes
+        metodologías, de investigación, extensión, proyección y responsabilidad social.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

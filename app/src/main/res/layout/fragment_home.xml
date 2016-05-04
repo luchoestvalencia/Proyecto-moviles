@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        style="@style/Base.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mision"
+        android:textStyle="bold"
+        android:backgroundTint="#507835"
+        android:autoText="false"
+        android:textColor="#507835"
+        android:textSize="@dimen/design_navigation_icon_padding"
+        android:id="@+id/textViewMisioon"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/visionText"
+        android:id="@+id/textView14"
+        android:layout_weight="0.31" />
+
+    <TextView
+        style="@style/Base.Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vision"
+        android:textStyle="bold"
+        android:backgroundTint="#20912D"
+        android:autoText="false"
+        android:textColor="#507835"
+        android:textSize="@dimen/design_navigation_icon_padding"
+        android:id="@+id/textViewVision"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/misionText"
+        android:id="@+id/textView15"
+        android:layout_weight="0.37" />
+
+</LinearLayout>
