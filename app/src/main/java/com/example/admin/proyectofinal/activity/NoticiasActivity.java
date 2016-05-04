@@ -1,17 +1,16 @@
-package com.example.admin.practicanavegationdrawer.activity;
+package com.example.admin.proyectofinal.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 
 
-import com.example.admin.practicanavegationdrawer.R;
-import com.example.admin.practicanavegationdrawer.fragments.DestalleDeNoticiasFragment;
-import com.example.admin.practicanavegationdrawer.fragments.ListaDeNoticiasFragment;
-import com.example.admin.practicanavegationdrawer.util.GestionDelIdioma;
-import com.example.admin.practicanavegationdrawer.vo.Noticia;
+import com.example.admin.proyectofinal.R;
+import com.example.admin.proyectofinal.fragments.DestalleDeNoticiasFragment;
+import com.example.admin.proyectofinal.fragments.ListaDeNoticiasFragment;
+import com.example.admin.proyectofinal.util.GestionDelIdioma;
+import com.example.admin.proyectofinal.vo.Noticia;
 
 import java.util.ArrayList;
 /**

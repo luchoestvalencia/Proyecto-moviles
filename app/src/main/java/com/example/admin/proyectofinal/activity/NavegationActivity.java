@@ -1,6 +1,5 @@
-package com.example.admin.practicanavegationdrawer.activity;
+package com.example.admin.proyectofinal.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.NavigationView;
@@ -11,15 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.example.admin.practicanavegationdrawer.R;
-import com.example.admin.practicanavegationdrawer.fragments.DirectorioFragment;
-import com.example.admin.practicanavegationdrawer.fragments.DestalleDeNoticiasFragment;
-import com.example.admin.practicanavegationdrawer.fragments.HomeFragment;
-import com.example.admin.practicanavegationdrawer.fragments.ListaDeNoticiasFragment;
-import com.example.admin.practicanavegationdrawer.fragments.SugerenciasFragment;
-import com.example.admin.practicanavegationdrawer.util.GestionDelIdioma;
+import com.example.admin.proyectofinal.R;
+import com.example.admin.proyectofinal.fragments.DirectorioFragment;
+import com.example.admin.proyectofinal.fragments.HomeFragment;
+import com.example.admin.proyectofinal.fragments.SugerenciasFragment;
+import com.example.admin.proyectofinal.util.GestionDelIdioma;
 
 /**
  * Actividad encargada navegar

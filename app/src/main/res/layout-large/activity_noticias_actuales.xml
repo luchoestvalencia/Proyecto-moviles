@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/fragmento_detalle_noticia"
-        class="com.example.admin.practicanavegationdrawer.fragments.DestalleDeNoticiasFragment"
+        class="com.example.admin.proyectofinal.fragments.DestalleDeNoticiasFragment"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="66.65"
@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/fragmento_lista_noticias"
-        class="com.example.admin.practicanavegationdrawer.fragments.ListaDeNoticiasFragment"
+        class="com.example.admin.proyectofinal.fragments.ListaDeNoticiasFragment"
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="58.01" />

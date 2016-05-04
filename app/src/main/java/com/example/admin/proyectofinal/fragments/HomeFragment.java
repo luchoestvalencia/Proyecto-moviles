@@ -1,4 +1,4 @@
-package com.example.admin.practicanavegationdrawer.fragments;
+package com.example.admin.proyectofinal.fragments;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.admin.practicanavegationdrawer.R;
+import com.example.admin.proyectofinal.R;
 
 /**
  * Fragmente del Home

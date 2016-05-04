@@ -1,4 +1,4 @@
-package com.example.admin.practicanavegationdrawer.vo;
+package com.example.admin.proyectofinal.vo;
 
 import android.os.Parcel;
 import android.os.Parcelable;

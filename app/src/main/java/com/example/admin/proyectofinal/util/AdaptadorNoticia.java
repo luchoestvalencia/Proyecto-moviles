@@ -1,4 +1,4 @@
-package com.example.admin.practicanavegationdrawer.util;
+package com.example.admin.proyectofinal.util;
 
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.admin.practicanavegationdrawer.R;
-import com.example.admin.practicanavegationdrawer.fragments.ListaDeNoticiasFragment;
-import com.example.admin.practicanavegationdrawer.vo.Noticia;
+import com.example.admin.proyectofinal.R;
+import com.example.admin.proyectofinal.fragments.ListaDeNoticiasFragment;
+import com.example.admin.proyectofinal.vo.Noticia;
 
 import java.util.ArrayList;
 /**

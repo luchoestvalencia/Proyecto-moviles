@@ -1,4 +1,4 @@
-package com.example.admin.practicanavegationdrawer;
+package com.example.admin.proyectofinal;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
