@@ -8,7 +8,7 @@ import com.example.admin.practicanavegationdrawer.fragments.DestalleDeNoticiasFr
 import com.example.admin.practicanavegationdrawer.vo.Noticia;
 
 /**
- * Actividad encargada de gestionar el detalle de la noticia
+ * Actividad del detalle de la noticia
  * @author Luisa Fernanda Arango Valencia
  * @author Luis Esteban Valencia Moreno
  * 27 de Abril de 2016
