@@ -1,4 +1,4 @@
-package com.example.admin.proyectofinal;
+package com.example.admin.practicanavegationdrawer;
 
 import org.junit.Test;
 

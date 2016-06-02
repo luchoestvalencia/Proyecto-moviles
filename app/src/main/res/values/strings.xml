@@ -17,7 +17,7 @@
     <string name="sitio_web">Ir al sitio web</string>
     <string name="version_ingles">Versión en Ingles</string>
 
-    <string name="menudirectori">Rectoria</string>
+    <string name="menudirectori">Contactos</string>
     <string name="contacto1">Secretaría general</string>
     <string name="contacto1_2">Telefono: 7458936</string>
     <string name="contacto2">Planeación y desarrollo</string>
@@ -28,7 +28,7 @@
     <string name="vision">Visión</string>
 
     <string name="nombre">Nombre :</string>
-    <string name="email">Email :</string>
+    <string name="email">Asunto :</string>
     <string name="sugerencia">Sugerencia :</string>
     <string name="enviar">Enviar</string>
 

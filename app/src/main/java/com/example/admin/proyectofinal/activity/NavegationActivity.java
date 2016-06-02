@@ -14,11 +14,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.admin.proyectofinal.R;
 import com.example.admin.proyectofinal.fragments.DirectorioFragment;
 import com.example.admin.proyectofinal.fragments.HomeFragment;
+import com.example.admin.proyectofinal.fragments.NoConexionFragment;
 import com.example.admin.proyectofinal.fragments.SugerenciasFragment;
 import com.example.admin.proyectofinal.util.GestionDelIdioma;
 
@@ -39,13 +39,6 @@ public class NavegationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (!verificaConexion(this)) {
-            Toast.makeText(getBaseContext(),
-                    "Comprueba tu conexión a Internet. Saliendo ... ", Toast.LENGTH_SHORT)
-                    .show();
-            this.finish();
-        }
-        else{
             setContentView(R.layout.activity_navegation);
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_nav_menu); //agraga en la parte alta
             getSupportActionBar().setDisplayHomeAsUpEnabled(true); //abilitar que se abra
@@ -54,10 +47,17 @@ public class NavegationActivity extends AppCompatActivity {
             NavigationView navView = (NavigationView)findViewById(R.id.navview);
             navView.setItemIconTintList(null); //para que no tenga tinta
 
-            remplazarFragmento(new HomeFragment());
+                if (!verificaConexion())
+                {
+                    remplazarFragmento(new NoConexionFragment());
+
+                }else
+                {
+                    remplazarFragmento(new HomeFragment());
+
+                }
             //evento del navegation
-            navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
-            {
+            navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                 /**
                  * Metodo encargado de darle accion al item seleccionado
                  * @param item
@@ -67,34 +67,73 @@ public class NavegationActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.menu_seccion_6:
-                            remplazarFragmento(new HomeFragment());
+                            if (!verificaConexion())
+                            {
+                                remplazarFragmento(new NoConexionFragment());
 
+                            }else
+                            {
+                                remplazarFragmento(new HomeFragment());
+
+                            }
                             break;
                         case R.id.menu_seccion_1:
-                            Intent intent= new Intent(NavegationActivity.this, NoticiasActivity.class);
-                            startActivity(intent);
-                            break;
+                            if (!verificaConexion())
+                            {
+                                remplazarFragmento(new NoConexionFragment());
+
+                            }else
+                            {
+                                Intent intent = new Intent(NavegationActivity.this, NoticiasActivity.class);
+                                startActivity(intent);
+
+                            }
+                                break;
                         case R.id.menu_seccion_2:
-                            remplazarFragmento(new DirectorioFragment());
+                            if (!verificaConexion())
+                            {
+                                remplazarFragmento(new NoConexionFragment());
+
+                            }else
+                            {
+                                remplazarFragmento(new DirectorioFragment());
+
+                            }
 
                             break;
                         case R.id.menu_seccion_3:
-                            remplazarFragmento(new SugerenciasFragment());
-                            Log.i("NavigationView", "Pulsada seccion 3");
+                            if (!verificaConexion())
+                            {
+                                remplazarFragmento(new NoConexionFragment());
+
+                            }else
+                            {
+                                remplazarFragmento(new SugerenciasFragment());
+
+                            }
 
                             break;
                         case R.id.menu_seccion_4:
-                            //El brindamos el dato necesario a Uri
-                            Uri uriUrl = Uri.parse("https://www.uniquindio.edu.co/");
-                            //Especificamos la accion a realizar con el ACTION_VIEW
-                            //para que elija lo mas razonable
-                            Intent intent3 = new Intent(Intent.ACTION_VIEW, uriUrl);
-                            startActivity(intent3);
+                            if (!verificaConexion())
+                            {
+                                remplazarFragmento(new NoConexionFragment());
 
-                            Log.i("NavigationView", "Pulsada opción 1");
+                            }else
+                            {
+                                //El brindamos el dato necesario a Uri
+                                Uri uriUrl = Uri.parse("https://www.uniquindio.edu.co/");
+                                //Especificamos la accion a realizar con el ACTION_VIEW
+                                //para que elija lo mas razonable
+                                Intent intent3 = new Intent(Intent.ACTION_VIEW, uriUrl);
+                                startActivity(intent3);
+
+                                Log.i("NavigationView", "Pulsada opción 1");
+
+                            }
+
                             break;
-                        case R.id.menu_seccion_5:
 
+                        case R.id.menu_seccion_5:
 
 
                             GestionDelIdioma.cambiarIdioma(NavegationActivity.this);
@@ -110,7 +149,7 @@ public class NavegationActivity extends AppCompatActivity {
                     return true;
                 }
             });
-        }
+
 
 
 
@@ -146,13 +185,13 @@ public class NavegationActivity extends AppCompatActivity {
 
     /**
      * Metodo encargado de verificar la concexion a internet
-     * @param ctx
+
      * @return true en si hay conexion, false no conexion
      */
-    public static boolean verificaConexion(Context ctx) {
+    public boolean verificaConexion() {
 
         ConnectivityManager cm =
-                (ConnectivityManager) ctx.getSystemService(Context.CONNECTIVITY_SERVICE);
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         if (netInfo != null && netInfo.isConnected()) {
             return true;

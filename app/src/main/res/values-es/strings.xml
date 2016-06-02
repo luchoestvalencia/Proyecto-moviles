@@ -10,11 +10,13 @@
     <string name="sitio_web">Ir al sitio web</string>
     <string name="version_ingles">Versión en Ingles</string>
 
+    <string name="menudirectori">Contactos</string>
+
     <string name="mision">Misión</string>
     <string name="vision">Visión</string>
 
     <string name="nombre">Nombre :</string>
-    <string name="email">Correo :</string>
+    <string name="email">Asunto :</string>
     <string name="sugerencia">Sugerencia :</string>
     <string name="enviar">Enviar</string>
 

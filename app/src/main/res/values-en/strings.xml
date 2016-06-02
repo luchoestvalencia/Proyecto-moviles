@@ -10,11 +10,13 @@
     <string name="sitio_web">Go to the website</string>
     <string name="version_ingles">Spanish version</string>
 
+    <string name="menudirectori">Contact</string>
+
     <string name="mision">Mission</string>
     <string name="vision">Vision</string>
 
     <string name="nombre">Name :</string>
-    <string name="email">Email :</string>
+    <string name="email">Issue :</string>
     <string name="sugerencia">Suggestion :</string>
     <string name="enviar">Submit</string>
 

@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/titulo_de_detalle_noticia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginTop="7dp"
-        android:text="Medium Text"
-        android:textColor="#005423"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold"
-        android:layout_weight="0.36" />
-
     <ImageView
         android:id="@+id/imagen_detalle"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:contentDescription="@string/descripcion_imagen_detalle"
         android:src="@drawable/noticia_encabezado"
-        android:layout_weight="0.29" />
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttonTw"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-
-    <ImageView
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:id="@+id/image_fb"
-        android:src="@drawable/redes"
-        android:layout_gravity="right" />
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonTw"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/twitt"
+        android:layout_toLeftOf="@+id/buttonFb"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/buttonFb"
+        android:layout_above="@+id/scrollView"
+        android:layout_marginLeft="240dp" />
 
+    <Button
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonFb"
+        android:layout_gravity="right"
+        android:background="@drawable/fb"
+        android:layout_marginTop="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_weight="2"
+        android:layout_weight="1.81"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/buttonFb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,15 +59,45 @@
             android:weightSum="1">
 
             <TextView
+                android:id="@+id/titulo_de_detalle_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#507835"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Titulo"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
                 android:id="@+id/descripcion_de_detalle_noticia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:maxLines="30"
-                android:text="@string/texto_detalle_de_noticia"
                 android:textSize="@dimen/detalle_texto_descripción"
-                android:layout_weight="1.01" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="gravity"
+                android:text="Con éxito se cumplió la Segunda Feria Departamental del programa de Innovación Social en la Universidad del Quindío, liderada por la Gobernación del Quindío con el apoyo de la Corporación Universitaria Nacional, la Corporación Autónoma Regional del Quindío, y la vicerrectoría de Investigaciones de nuestra institución, en un proyecto que piensa en la juventud, la innovación, el medio ambiente, con el convencimiento de que solo a través del estímulo al estudio y a la creatividad, se puede creer en un mejor futuro para la sociedad.  En sus palabras de bienvenida el rector José Fernando Echeverry Murillo manifestó que era importante valorar la implementación de ese tipo de iniciativas para el fomento de una cultura ciudadana y emprendedora en la comunidad educativa y productiva del departamento del Quindío.  “Creo hoy más que nunca y con la decisión puesta en nuestra acreditación institucional de alta calidad, que el futuro de la Universidad del Quindío representado en las mentes jóvenes, inquietas y con gran imaginación que nos acompañan en este coliseo, es más que positivo, y hace que sigamos trabajando por una Universidad Creativa” expresó a los niños, jóvenes y profesores reunidos en el coliseo uniquindiano." />
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonWha"
+        android:background="@drawable/whats"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignRight="@+id/buttonTw"
+        android:layout_alignEnd="@+id/buttonTw"
+        android:layout_below="@+id/imagen_detalle"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="170dp" />
+</RelativeLayout>
